@@ -6,4 +6,4 @@ Thanks for checking out my front-end coding challenges from Frontend Mentor Chal
 
 To view all the challenges in Live Preview click down 
 
-[LIVE PREVIEW](https://cranky-brown-c654bb.netlify.app) 
+[LIVE PREVIEW](https://sati-frontend-mentor.netlify.app/) 
