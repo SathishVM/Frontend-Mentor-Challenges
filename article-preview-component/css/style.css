@@ -116,12 +116,21 @@ img {
   position: relative;
 }
 
+.share .fas, .share .fab {
+  font-size: 20px;
+  color: #ecf2f8;
+}
+
 .share .share-icon {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
   border-radius: 50%;
   background-color: #ecf2f8;
+  color: #48556a;
   z-index: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,12 +143,8 @@ img {
 }
 
 .share .share-icon:hover {
-  background-color: #6d7f97;
-  cursor: pointer;
-}
-
-.share .share-icon:hover svg path {
-  fill: #fff;
+  background-color: #48556a;
+  color: #ecf2f8;
 }
 
 .share .share-box {
@@ -153,10 +158,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.share .share-box svg {
-  cursor: pointer;
 }
 
 .share .share-box span {
@@ -203,7 +204,7 @@ img {
 
 @media only screen and (max-width: 700px) {
   body {
-    font-size: 11px;
+    font-size: 12px;
   }
   .card {
     -webkit-box-orient: vertical;
@@ -226,7 +227,7 @@ img {
   }
   .card__right {
     border-bottom-left-radius: 8px;
-    padding: 20px 32px 18px;
+    padding: 20px 32px 10px;
   }
   .card__author-detail {
     margin-right: auto;

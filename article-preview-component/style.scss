@@ -110,24 +110,28 @@ img {
 .share {
   position: relative;
 
+  .fas,.fab {
+    font-size: 20px;
+    color: $light-grayish-blue;
+  }
+
   .share-icon {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
     border-radius: 50%;
     background-color: $light-grayish-blue;
+    color: $dark-grayish-blue;
     z-index: 1;
+    transition: all .3s ease;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     &:hover {
-      background-color: $dark-blue;
-      cursor: pointer;
-    }
-
-    &:hover svg path {
-      fill: #fff;
+      background-color: $dark-grayish-blue;
+      color: $light-grayish-blue;
     }
   }
 
@@ -141,10 +145,6 @@ img {
 
     display: none;
     align-items: center;
-
-    svg {
-      cursor: pointer;
-    }
 
     span {
       font-size: 14px;
@@ -195,7 +195,7 @@ img {
 
 @media only screen and (max-width: 700px) {
   body {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .card {
@@ -218,7 +218,7 @@ img {
 
     &__right {
       border-bottom-left-radius: 8px;
-      padding: 20px 32px 18px;
+      padding: 20px 32px 10px;
     }
 
     &__author-detail {
