@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* colors */
+
+:root {
+  --color-cyan: rgb(42, 178, 175);
+  --color-light-cyan: rgb(75, 190, 188);
+
+  --color-bright-yellow: hsl(71, 73%, 54%);
+
+  --color-white: rgb(255, 255, 255);
+
+  --color-light-gray: rgb(229, 239, 245);
+  --color-grayish-blue: rgb(152, 166, 189);
+
+  --box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+}
+
+/* Basic Gobal Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'karla', sans-serif;
+  font-size: 16px;
+  background-color: var(--color-light-gray);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+section {
+  padding: 40px;
+}
+
+/* wrapper top */
+.top {
+  background-color: var(--color-white);
+}
+.title {
+  color: var(--color-cyan);
+  margin-bottom: 30px;
+}
+.subtitle {
+  color: var(--color-bright-yellow);
+  margin-bottom: 15px;
+}
+.para {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/* wrapper bottom */
+
+.bottom section {
+  flex: 1;
+}
+
+.left {
+  background-color: var(--color-cyan);
+}
+
+.left .subscription {
+  margin-bottom: 15px;
+}
+
+.left .subscription__price {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.left .subscription__price span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.left button {
+  font-family: 'karla', sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: var(--color-bright-yellow);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  margin-top: 25px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.right {
+  background-color: var(--color-light-cyan);
+}
+
+.right .why-us {
+  margin-bottom: 15px;
+}
+
+.right .why-us__list li {
+  list-style-type: none;
+  font-size: 14.5px;
+}
+
+.right .why-us__list li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+/* utilities */
+
+.color-bright-yellow {
+  color: var(--color-bright-yellow);
+}
+
+.color-grayish-blue {
+  color: var(--color-grayish-blue);
+}
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* media queries (max-width: 700px) */
+
+@media only screen and (max-width: 700px) {
+  body {
+    margin: 50px 20px;
+  }
+  section {
+    padding: 30px;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+}
