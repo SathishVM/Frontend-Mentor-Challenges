@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* colors and variables */
+
+:root {
+  --color-desaturated-red: hsl(0, 36%, 70%);
+  --color-soft-red: hsl(0, 93%, 68%);
+
+  --color-dark-grayish-red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+
+  --gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* 
+    - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) 
+  */
+}
+
+/* basic globl reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: var(--color-desaturated-red);
+}
+
+/* main style start here */
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.inner-wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 60%;
+  background-image: url('./images/bg-pattern-desktop.svg');
+}
+
+.left .logo {
+  margin: 60px 0px 90px 0px;
+}
+
+.left .bg-image {
+  display: none;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--color-dark-grayish-red);
+}
+
+h1 span {
+  font-weight: 300;
+  color: var(--color-desaturated-red);
+}
+
+.left h1 {
+  font-size: 45px;
+  letter-spacing: 20px;
+}
+
+.left p {
+  margin: 40px 0;
+  line-height: 30px;
+}
+
+.left form {
+  position: relative;
+}
+
+.left form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 25px;
+  border: 1px solid hsl(0, 80%, 86%);
+  color: var(--color-dark-grayish-red);
+}
+
+.left form button {
+  height: 50px;
+  text-align: center;
+  background: var(--gradient);
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 40px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.left form button:hover {
+  opacity: 0.85;
+}
+
+.left form input:focus,
+.left form button:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
+}
+
+.left form .error-img {
+  position: absolute;
+  top: 0;
+  right: 105px;
+  transform: translateY(50%);
+  display: none;
+}
+
+.left form small {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  display: none;
+}
+
+.left form.error .error-img,
+.left form.error .error-msg,
+.left form.success .success-msg {
+  display: block;
+}
+
+.left form.error input {
+  border: 1px solid var(--color-soft-red);
+}
+
+.left form.success input {
+  border: 1px solid #4caf50;
+}
+
+.left form.success small {
+  color: #4caf50;
+}
+
+.right {
+  width: 40%;
+  background-image: url('./images/hero-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* keyframes */
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 1.5s;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .inner-wrapper {
+    padding: 20px 20px 30px 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left .bg-image {
+    display: block;
+    margin: 0 -40px;
+    width: calc(100% + 80px);
+    margin-bottom: 60px;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .left .logo {
+    margin: 30px 0px;
+  }
+
+  .left h1 {
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 12px;
+  }
+
+  .left p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .left form {
+    margin-bottom: 25px;
+  }
+
+  .left form button {
+    padding: 0 25px;
+  }
+}

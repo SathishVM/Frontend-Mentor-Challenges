@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="wrapper">
+
+    <div class="left">
+      <div class="inner-wrapper">
+        <img class="logo animate__animated animate__fadeInUp" src="./images/logo.svg" alt="logo">
+        <img class="bg-image animate__animated animate__fadeInUp" src="./images/hero-mobile.jpg" alt="hero-mobile">
+        <h1 class="animate__animated animate__fadeInUp">
+          <span>We're</span>
+          <br>
+          COMING SOON
+        </h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form class="form animate__animated animate__fadeInUp animate__delay-1s">
+          <input class="form-input" type="email" placeholder="Email Address" />
+          <img class="error-img" src="./images/icon-error.svg" alt="icon-error">
+          <button type="submit">
+            <img src="./images/icon-arrow.svg" alt="submit-button">
+          </button>
+          <small class="error-msg">Please provide a valid email</small>
+          <small class="success-msg">Thank You for the Suscription! We'll Contact You Soon!!</small>
+        </form>
+      </div>
+    </div>
+
+    <div class="right animate__animated animate__fadeInRight"></div>
+
+  </main>
+  
+  <!-- validation script -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
