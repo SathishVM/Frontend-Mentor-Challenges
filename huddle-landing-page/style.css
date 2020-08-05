@@ -1,0 +1,150 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* global reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-image: url('./images/bg-desktop.svg');
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+}
+
+img {
+  max-width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* site style starts here */
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 40px 0 60px 0;
+}
+
+.hero-wrapper .right {
+  padding: 40px 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.col > div {
+  flex: 1;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-desc {
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+.cta {
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons div a {
+  margin: 0 8px;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons div a .fab {
+  color: #fff;
+}
+
+.social-icons div a:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.social-icons a:hover .fab {
+  color: hsl(257, 40%, 49%);
+}
+
+@media only screen and (max-width: 840px) {
+  header img {
+    width: 50%;
+  }
+  .hero-wrapper {
+    text-align: center;
+  }
+  .hero-image {
+    max-width: 90%;
+  }
+  .hero-wrapper .right {
+    padding: 40px 0px;
+  }
+  .hero-title {
+  }
+  .col {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .cta {
+    padding: 18px 80px;
+  }
+  .social-icons {
+    margin-bottom: 30px;
+  }
+  .social-icons div {
+    justify-content: center;
+  }
+}
