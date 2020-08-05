@@ -137,6 +137,7 @@ header {
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
+    background-image: url('./images/bg-mobile.svg');
   }
   .cta {
     padding: 18px 80px;
