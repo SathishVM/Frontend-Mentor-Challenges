@@ -102,6 +102,10 @@ header {
   padding: 50px 0;
 }
 
+header nav{
+  padding-bottom: 50px;
+}
+
 header .col-left {
   flex-basis: 40%;
 }
