@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--very-dark-cyan);
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-sb {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  color: var(--very-dark-cyan);
+  background-color: #fff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-pink {
+  color: #fff;
+  background-color: var(--color-pink);
+  padding: 20px 40px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/*****************************************
+ site style starts here 
+*/
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*****************************************
+ header start
+*/
+header {
+  background-image: url('./images/bg-hero-desktop.svg');
+  background-color: var(--very-pale-cyan);
+}
+
+header nav {
+  padding: 50px 0;
+}
+
+header .col-left {
+  flex-basis: 40%;
+}
+header .col-right {
+  flex-basis: 60%;
+}
+
+header .col-right img {
+  max-width: 95%;
+}
+
+header .hero-title {
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+
+header .hero-desc {
+  margin-bottom: 30px;
+}
+
+/* header end*/
+
+/*****************************************
+ main start 
+*/
+
+main {
+  margin-top: 150px !important;
+}
+
+main section {
+  height: 450px;
+  max-width: 100%;
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+main section div.col-left {
+  max-width: 500px;
+  margin: auto;
+}
+
+main section:nth-child(2) div.col-right {
+  max-width: 500px;
+  margin: auto;
+}
+
+main section div.col-left,
+main section div.col-right {
+  flex-basis: 50%;
+}
+
+main section div img {
+  max-width: 70%;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.section-desc {
+  line-height: 1.6;
+  color: var(--grayish-blue);
+}
+
+.cta-box {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px !important;
+  text-align: center;
+  padding: 50px 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.cta-box h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+/* main end */
+
+/*****************************************
+ footer start 
+*/
+
+footer {
+  position: relative;
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+  padding: 180px 0 80px 0;
+  margin-top: -80px;
+  z-index: -1;
+}
+
+footer div.d-flex > div {
+  flex: 1;
+}
+
+.contact-list {
+  margin-top: 40px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.contact-list li:nth-child(1) img {
+  flex-shrink: 0;
+  margin-top: -40px;
+}
+.contact-list li img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.contact-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-nav div {
+  margin: 0 10px;
+}
+
+.footer-nav div li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.social-icons div a {
+  margin: 0 8px;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons div a .fab {
+  color: #fff;
+}
+
+.social-icons div a:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.social-icons a:hover .fab {
+  color: var(--very-dark-cyan);
+}
+
+.copyright {
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* footer end */
+
+/* media queries */
+
+@media only screen and (max-width: 1100px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .col-left,
+  header .col-right {
+    flex-basis: 100%;
+  }
+  header .col-left {
+    margin-bottom: 30px;
+  }
+  header .col-right img {
+    max-width: 100%;
+  }
+
+  main {
+    margin-top: 60px !important;
+  }
+  main section div img {
+    max-width: 85%;
+  }
+  .cta-box {
+    margin-top: 30px !important;
+  }
+
+  .contact-list li {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  body {
+    font-size: 16px;
+  }
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  header nav img{
+    width: 50%;
+  }
+  header {
+    text-align: center;
+  }
+  header .col-right {
+    margin-bottom: 30px;
+  }
+  header .col-right img {
+    max-width: 80%;
+  }
+
+  main {
+    margin-top: 40px !important;
+  }
+  main section {
+    padding: 40px;
+  }
+  main section.d-flex:nth-child(2) {
+    flex-wrap: wrap-reverse;
+  }
+  main section div.col-left,
+  main section div.col-right {
+    flex-basis: 100%;
+  }
+  main section div img {
+    max-width: 60%;
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .cta-box {
+    margin-top: 30px !important;
+  }
+  .cta-box h2 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+  footer div.d-flex > div {
+    flex-basis: 100%;
+  }
+  .footer-nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact-list li {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+  }
+  header nav img{
+    width: 40%;
+  }
+  header .hero-title {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+
+
+  main section div img {
+    max-width: 80%;
+  }
+}
