@@ -356,6 +356,7 @@ footer .d-flex > div {
   main .subscription .feature__email {
     margin-bottom: 15px;
     margin-top: 20px;
+    width: 100%;
   }
 
   footer .d-flex > div {
@@ -376,13 +377,20 @@ footer .d-flex > div {
     width: 30%;
   }
 
+  .form__email {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    padding: 0px 0px;
+    width: 100%;
+  }
+
   main .subscription .subscription__title {
     margin-bottom: 20px;
     text-align: center;
-  }
-
-  main .subscription .feature__email {
-    width: 100%;
   }
 
   footer .footer__nav div {
@@ -411,6 +419,7 @@ footer .d-flex > div {
   header .banner {
     margin-top: 50px;
   }
+
   main section.feature .left .feature__title {
     font-size: 18px;
     margin-bottom: 30px;
@@ -433,17 +442,6 @@ footer .d-flex > div {
 
   main section.feature {
     padding-bottom: 40px;
-  }
-
-  .form__email {
-    width: 100%;
-    margin-right: 0px;
-    margin-bottom: 15px;
-  }
-
-  .btn {
-    padding: 0px 0px;
-    width: 100%;
   }
 
   main {
