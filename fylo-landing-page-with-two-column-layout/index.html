@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!------------------- header ------------------->
+  <header>
+    <div class="wrapper">
+      <nav class="nav align-items-center">
+        <img class="nav__logo" src="./images/logo.svg" alt="logo">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Features</a></li>
+          <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Team</a></li>
+          <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Sign In</a></li>
+        </ul>
+      </nav>
+      <div class="banner d-flex">
+        <div class="left">
+          <h1 class="banner__title">All your files in one secure location, accessible anywhere.</h1>
+          <p class="banner__desc">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+          <form class="form__group">
+            <input type="email" class="form__email" placeholder="Enter your email...">
+            <button class="btn">Get Started</button>
+          </form>
+        </div>
+        <div class="right d-flex justify-content-center">
+          <img class="banner__image" src="./images/illustration-1.svg" alt="banner-image">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!------------------- /header ------------------->
+
+  <!------------------- main ------------------->
+
+  <img class="" src="./images/bg-curve-desktop.svg" alt="">
+
+  <main>
+    <div class="wrapper">
+      <section class="feature d-flex justify-content-center">
+        <div class="left">
+          <h1 class="feature__title">Stay productive, wherever you are</h1>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
+          <a href="javascript:void(0)" class="feature__cta">See how Fylo works <img class=""
+              src="./images/icon-arrow.svg" alt=""></a>
+          <div class="card">
+            <img class="" src="./images/icon-quotes.svg" alt="">
+            <p class="card__desc">
+              Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="card__author d-flex align-items-center">
+              <img src="./images/avatar-testimonial.jpg" alt="" class="card__author-image">
+              <div>
+                <h4>Kyle Burton</h4>
+                <small>Founder & CEO, Huddle</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right d-flex justify-content-center align-items-center">
+          <img class="feature__image" src="./images/illustration-2.svg" alt="feature-image">
+        </div>
+      </section>
+    </div>
+
+    <section class="subscription">
+
+      <div class="wrapper d-flex">
+        <div class="left">
+          <h2 class="subscription__title">Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
+        <div class="right">
+          <form class=" d-flex d-flex-column justify-content-center align-items-center">
+            <input type="email" class="form__email feature__email" placeholder="email@example.com">
+            <button class="btn">Get Started For Free</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!------------------- /main ------------------->
+
+  <!------------------- footer ------------------->
+
+  <footer>
+    <div class="wrapper">
+      <img class="footer__logo" src="./images/logo-white.svg" alt="">
+      <div class="d-flex">
+        <div>
+          <ul class="contact-list">
+            <li>
+              <img src="./images/icon-phone.svg" alt="">
+              <span>Phone: +1-543-123-4567</span>
+            </li>
+            <li>
+              <img src="./images/icon-email.svg" alt="">
+              <span>example@fylo.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="footer__nav d-flex">
+            <div>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="social-icons">
+          <div class="d-flex justify-content-center">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!------------------- /footer ------------------->
+</body>
+
+</html>
