@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link id="toggle-stylesheet" rel="stylesheet" href="./css/light-style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <div class="dashboard-title">
+        <h1>Social Media Dashboard</h1>
+        <p class="color-gray">Total Followers: 23,004</p>
+      </div>
+      <div class="toggle-div d-flex align-items-center">
+        <p>Dark Mode</p>
+        <div>
+          <input type="checkbox" name="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="dashboards">
+    <div class="wrapper">
+
+      <!-- dashboard of social media -->
+
+      <div class="dashboard-media">
+        <div class="dashboard-box">
+          <div class="top-line"></div>
+          <div class="social-media d-flex justify-content-center">
+            <img src="./images/icon-facebook.svg" alt="">
+            <h5>@nathanf</h5>
+          </div>
+          <h1>1987</h1>
+          <p>Followers</p>
+
+          <div class="d-flex align-items-center  justify-content-center">
+            <img src="./images/icon-up.svg" alt="">
+            <span class="color-green">12 Today</span>
+          </div>
+        </div>
+
+        <div class="dashboard-box">
+          <div class="top-line"></div>
+          <div class="social-media d-flex justify-content-center">
+            <img src="./images/icon-twitter.svg" alt="">
+            <h5>@nathanf</h5>
+          </div>
+          <h1>1044</h1>
+          <p>Followers</p>
+          <div class="d-flex align-items-center  justify-content-center">
+            <img src="./images/icon-up.svg" alt="">
+            <span class="color-green">99 Today</span>
+          </div>
+        </div>
+
+        <div class="dashboard-box">
+          <div class="top-line"></div>
+          <div class="social-media d-flex justify-content-center">
+            <img src="./images/icon-instagram.svg" alt="">
+            <h5>@realnathanf</h5>
+          </div>
+          <h1>11k</h1>
+          <p>Followers</p>
+          <div class="d-flex align-items-center  justify-content-center">
+            <img src="./images/icon-up.svg" alt="">
+            <span class="color-green">1099 Today</span>
+          </div>
+        </div>
+
+        <div class="dashboard-box">
+          <div class="top-line"></div>
+          <div class="social-media d-flex justify-content-center">
+            <img src="./images/icon-youtube.svg" alt="">
+            <h5>Nathan F.</h5>
+          </div>
+          <h1>8239</h1>
+          <p>Subscribers</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="./images/icon-up.svg" alt="">
+            <span class="color-green">144 Today</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- dashboard of overiew - today -->
+
+      <h2 class="overview-title">Overview - Today</h2>
+
+      <div class="dashboard-overview">
+
+        <div class="row">
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Page Views</h5>
+              <img src="./images/icon-facebook.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>87</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Likes</h5>
+              <img src="./images/icon-facebook.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>52</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Likes</h5>
+              <img src="./images/icon-instagram.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>5462</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Profile Views</h5>
+              <img src="./images/icon-instagram.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>52K</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">1375%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Retweets</h5>
+              <img src="./images/icon-twitter.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>117</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">303%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Likes</h5>
+              <img src="./images/icon-twitter.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>507</h2>
+              <div class="d-flex">
+                <img src="./images/icon-up.svg" alt="">
+                <span class="color-green">553%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Likes</h5>
+              <img src="./images/icon-youtube.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>107</h2>
+              <div class="d-flex">
+                <img src="./images/icon-down.svg" alt="">
+                <span class="color-red">19%</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-box">
+            <div class="d-flex">
+              <h5>Total Views</h5>
+              <img src="./images/icon-youtube.svg" alt="">
+            </div>
+            <div class="d-flex">
+              <h2>1407</h2>
+              <div class="d-flex">
+                <img src="./images/icon-down.svg" alt="">
+                <span class="color-red">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

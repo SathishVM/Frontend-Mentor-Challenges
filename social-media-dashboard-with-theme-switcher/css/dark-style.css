@@ -1,0 +1,35 @@
+:root {
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+  --very-dark-blue-body: hsl(230, 17%, 14%); /*(BG)*/
+  --very-dark-blue-top: hsl(232, 19%, 15%); /*(Top BG Pattern)*/
+  --dark-desaturated-blue: hsl(228, 28%, 20%); /*(Card BG)*/
+  --desaturated-blue: hsl(228, 34%, 66%); /*(Text)*/
+  --white: hsl(0, 0%, 100%); /*(Text)*/
+}
+
+body {
+  color: #fff;
+  background-color: var(--very-dark-blue-body);
+}
+
+header {
+  background-color: var(--very-dark-blue-top);
+}
+
+header p {
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+}
+
+.label {
+  background: var(--toggle);
+}
+
+.dashboard-media .dashboard-box p {
+  color: hsl(228, 12%, 44%);
+}
+
+.dashboard-box {
+  background-color: var(--dark-desaturated-blue);
+}
