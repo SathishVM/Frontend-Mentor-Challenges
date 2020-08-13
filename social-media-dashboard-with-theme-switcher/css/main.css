@@ -112,6 +112,11 @@ header .wrapper {
   text-transform: uppercase;
 }
 
+.dashboard-media .dashboard-box .social-media {
+  display: flex;
+  justify-content: center;
+}
+
 .dashboard-overview .row {
   margin-top: 30px;
   display: flex;
