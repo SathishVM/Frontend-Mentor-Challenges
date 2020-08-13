@@ -107,7 +107,8 @@ a:visited {
 }
 
 .wrapper {
-  padding: 0 80px;
+  margin: 0 auto;
+  max-width:1320px;
 }
 
 header {
@@ -301,11 +302,14 @@ footer .d-flex > div {
   color: var(--color-very-dark-blue);
 }
 
-@media only screen and (max-width: 1050px) {
+
+@media only screen and (max-width: 1330px) {
   .wrapper {
     padding: 0 50px;
   }
+}
 
+@media only screen and (max-width: 1050px) {
   main {
     background-color: var(--color-light-grayish-blue);
     padding: 100px 0 0 0;
@@ -402,10 +406,6 @@ footer .d-flex > div {
 }
 
 @media only screen and (max-width: 460px) {
-
-  .wrapper {
-    padding: 0 30px;
-  }
 
   header .nav .nav__list .nav__item:not(:last-child) {
     margin-right: 20px;
