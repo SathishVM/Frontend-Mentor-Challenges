@@ -9,6 +9,7 @@ const projects = [
   'ping-coming-soon-page',
   'single-price-grid-component',
   'social-media-dashboard-with-theme-switcher',
+  '3-column-preview-card',
 ];
 
 const list = document.getElementById('list');
